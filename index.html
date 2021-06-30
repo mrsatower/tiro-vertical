@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>Tiro Vertical</title></head>
+
+<style>
+  h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: hsl(0, 0%, 25%);
+    text-align: center;
+  }
+
+  #screen {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid gray;
+    background: linear-gradient(45deg, hsl(200, 80%, 90%), hsl(70, 80%, 98%));
+  }
+
+  .pelota {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: fit-content;
+  }
+
+  .suelo {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    width: 100%;
+    height: 14px;
+    background-color: hsl(140, 60%, 60%);
+  }
+</style>
+<body>
+
+  <main>
+    <h1>Tiro Vertical</h1>
+
+    <div id="screen"> 
+      <div class="pelota"></div>
+      <div class="suelo"></div>
+    </div>
+
+  </main>
+
+</body>
+
+<script src="./src/main.js" type="module"></script>
+</html>
+
